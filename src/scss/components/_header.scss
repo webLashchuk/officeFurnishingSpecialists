@@ -1,0 +1,87 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  margin: 0 auto;
+  font-weight: var(--fw-500);
+  padding: 30px;
+  width: 100%;
+  background-color: var(--color-yellow-100);
+  border-bottom: 1px solid var(--color-brown-600);
+  color: var(--color-brown-500);
+  transition-property: transform, padding;
+  transition-duration: 0.15s;
+
+  @include media(tablet-wide) {
+    padding: 15px;
+  }
+
+  .true {
+    border-color: var(--color-brown-500);
+  }
+
+  .scroll {
+    background-color: var(--color-yellow-100);
+  }
+
+  &--dark {
+    background-color: var(--color-brown-900);
+    border-color: var(--color-yellow-100);
+
+    .scroll {
+      background-color: var(--color-brown-900);
+    }
+
+    .true {
+      border-color: var(--color-yellow-100);
+    }
+
+    .btn--user {
+      color: var(--color-white) !important;
+    }
+
+    .btn--order {
+      background-color: var(--color-white) !important;
+      color: var(--color-brown-500) !important;
+
+      &:hover {
+        color: var(--color-white) !important;
+        background-color: var(--color-brown-500) !important;
+      }
+    }
+  }
+
+  .container {
+    max-width: 1370px;
+  }
+
+  &.hide {
+    transform: translateY(calc(-100% - 30px));
+  }
+
+  .logo {
+    order: 2;
+
+    &--tablet {
+      display: none;
+
+      @include media(tablet) {
+        display: block;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+.scroll {
+  padding: 10px 30px;
+
+  @include media(tablet-wide) {
+    padding: 15px;
+  }
+}

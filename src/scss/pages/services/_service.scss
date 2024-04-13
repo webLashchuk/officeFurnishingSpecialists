@@ -1,0 +1,99 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.service {
+  h3 {
+    flex-grow: 1;
+    line-height: 1.4;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    grid-gap: 40px;
+
+    @include media(mobile-l) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 100%;
+    position: relative;
+    padding-top: 59px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-repeat: no-repeat;
+      background-size: contain;
+      filter: var(--filter-brown-200);
+      width: 38px;
+      min-height: 38px;
+      top: 0;
+      left: 0;
+    }
+
+    &--creativity {
+      &::before {
+        background-image: var(--creativity);
+      }
+    }
+
+    &--solutions {
+      &::before {
+        background-image: var(--solutions);
+      }
+    }
+
+    &--process {
+      &::before {
+        background-image: var(--process);
+      }
+    }
+
+    &--sourcing {
+      &::before {
+        background-image: var(--sourcing);
+      }
+    }
+
+    &--assurance {
+      &::before {
+        background-image: var(--assurance);
+      }
+    }
+
+    &--logistics {
+      &::before {
+        background-image: var(--logistics);
+      }
+    }
+
+    &--execution {
+      &::before {
+        background-image: var(--execution);
+      }
+    }
+
+    &--disruption {
+      &::before {
+        background-image: var(--disruption);
+      }
+    }
+
+    &--delivery {
+      &::before {
+        background-image: var(--delivery);
+      }
+    }
+  }
+}

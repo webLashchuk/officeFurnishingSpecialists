@@ -1,0 +1,67 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.contact {
+  h2 {
+    margin-bottom: 120px;
+  }
+
+  &__form {
+    max-width: 598px;
+    width: 100%;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  label {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+
+    &:last-of-type {
+      margin-bottom: 28px;
+    }
+  }
+
+  input,
+  textarea {
+    border-color: transparent;
+    padding: 19px;
+    width: 100%;
+    background-color: var(--color-white);
+
+    &::placeholder {
+      color: var(--color-brown-600);
+      transition: color .2s;
+    }
+
+    &:hover::placeholder {
+      color: var(--color-brown-900);
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+    }
+
+    &:active::placeholder {
+      color: transparent;
+    }
+  }
+
+  textarea {
+    min-height: 156px;
+    resize: vertical;
+  }
+
+  .btn {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  @include media(tablet-wide) {}
+
+  @include media(mobile-l) {}
+
+  @include media(mobile-m) {}
+}

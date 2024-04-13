@@ -1,0 +1,43 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.case {
+
+  &__wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @include media(tablet) {
+      min-height: 600px;
+    }
+
+    @include media(mobile-l) {
+      min-height: 400px;
+    }
+  }
+
+  h2 {
+    margin-inline: 0;
+    margin-bottom: 24px;
+    line-height: 1.15;
+  }
+
+  h2,
+  p {
+    max-width: 562px;
+    z-index: 1;
+    text-align: left;
+  }
+
+  p {
+    font-size: 24px;
+  }
+}

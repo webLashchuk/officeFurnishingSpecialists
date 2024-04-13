@@ -1,0 +1,42 @@
+<section class="section dark">
+  <div class="container centered">
+
+    <h2 class="title title--catalog">
+      {{title}}
+    </h2>
+
+    <p class="sub-title {{class}}">
+      {{subTitle}}
+    </p>
+
+    <ul class="grid grid--catalog" data-items="4">
+      <li class="grid__item">
+        <include src="./html/_product.html">
+          {
+          "image":"{{prodImgFirst}}",
+          "alt":"{{prodAltFirst}}",
+          "width":"{{prodWidthFirst}}",
+          "height":"{{prodHeightFirst}}",
+          "title":"{{prodTitleFirst}}",
+          "text":"{{prodTextFirst}}"
+          }
+        </include>
+      </li>
+      <li class="grid__item">
+        <include src="./html/_product.html">
+          {
+          "image":"{{prodImgSecond}}",
+          "alt":"{{prodAltSecond}}",
+          "width":"{{prodWidthSecond}}",
+          "height":"{{prodHeightSecond}}",
+          "title":"{{prodTitleSecond}}",
+          "text":"{{prodTextSecond}}"
+          }
+        </include>
+      </li>
+    </ul>
+
+    <a class="btn btn--more" href="#">Make an Order</a>
+
+  </div>
+</section>

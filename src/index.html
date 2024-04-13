@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Home"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+
+    <include src="./html/_header.html" locals='{"page": "home", "class":""}'></include>
+
+    <main class="main">
+
+      <include src="./html/_hero.html">
+        {
+        "addClass":"",
+        "addOverlay":"overlay",
+        "image":"home.jpg",
+        "title":"Revitalize Your Workspace",
+        "text":"Mastering Office Outfitting with Elegance and Expertise",
+        "btnClass":"btn--request"
+        }
+      </include>
+
+      <include src="./html/home/_home-about.html"></include>
+
+      <include src="./html/home/_home-advantage.html">
+        {
+        "subTitle":"A Glimpse into Our Work",
+        "title":"Showcasing Crafted Transformations"
+        }
+      </include>
+
+      <include src="./html/home/_home-catalog.html"></include>
+
+      <include src="./html/home/_review.html">
+        {
+        "subTitle":"Voices of Inspiration",
+        "title":"Real Stories, Real Impact"
+        }
+      </include>
+
+      <include src="./html/_contact.html">
+        {
+        "subTitle":"",
+        "title":"Contact Us"
+        }
+      </include>
+    </main>
+
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

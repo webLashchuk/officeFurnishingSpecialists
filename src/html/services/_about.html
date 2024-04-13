@@ -1,0 +1,44 @@
+<section class="section about {{class}}">
+  <div class="container">
+
+    <article class="post">
+      <div class="post__inner background" style="background-image:url('./images/about/{{image}}')">
+
+        <div class="post__content">
+          <h2>
+            {{title}}
+          </h2>
+          <p>
+            {{text}}
+          </p>
+        </div>
+
+      </div>
+    </article>
+
+    <section class="service">
+
+      <ul class="service__inner">
+        <li class="service__item service__item--{{classFirst}}">
+          <h3>{{titleFirst}}</h3>
+          <p>
+            {{textFirst}}
+          </p>
+        </li>
+        <li class="service__item service__item--{{classSecond}}">
+          <h3>{{titleSecond}}</h3>
+          <p>
+            {{textSecond}}
+          </p>
+        </li>
+        <li class="service__item service__item--{{classThird}}">
+          <h3>{{titleThird}}</h3>
+          <p>
+            {{textThird}}
+          </p>
+        </li>
+      </ul>
+    </section>
+
+  </div>
+</section>

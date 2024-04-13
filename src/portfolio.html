@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk" class="page dark">
+<include src="./html/_head.html" locals='{"title": "Portfolio"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+
+    <include src="./html/_header.html" locals='{"page": "portfolio", "class":"header--dark"}'></include>
+
+    <main class="main">
+
+      <include src="./html/_hero.html">
+        {
+        "addClass":"",
+        "addOverlay":"overlay",
+        "image":"portfolio.jpg",
+        "title":"Discover Spaces Transformed",
+        "text":"Crafted for Excellence: Our Portfolio",
+        "btnClass":"btn--request"
+        }
+      </include>
+
+      <include src="./html/portfolio/_case.html">
+        {
+        "class":"section article--light",
+        "image":"command-center.jpg",
+        "title":"Brutalist Command Center",
+        "subTitle":"Strength in Structure",
+        "articleImg":"aesthetic.jpg",
+        "titleSmall":"Unyielding Aesthetic",
+        "text":"Our commitment to quality is unwavering. From the initial design concept to the final installation, we
+        ensure every aspect of our service exceeds expectations. Our team of experts leverages the latest trends and
+        technologies, offering personalized solutions that stand the test of time. We pride ourselves on delivering not
+        just workspaces, but environments that inspire, motivate, and support your team's best work. Experience the
+        difference quality makes with each project we bring to life.",
+        "imgFirst":"center-first.jpg",
+        "imgSecond":"center-second.jpg",
+        "imgThird":"center-third.jpg"
+        }
+      </include>
+
+      <include src="./html/portfolio/_case.html">
+        {
+        "class":"section article--light",
+        "image":"modernist-headquarters.jpg",
+        "title":"Modernist Vision Headquarters",
+        "subTitle":"Clarity in Simplicity",
+        "articleImg":"elegance.jpg",
+        "titleSmall":"Simplified Elegance",
+        "text":"Our Modernist Vision Headquarters project is a tribute to the simplicity and clarity of modernist
+        design. Featuring clean lines, functional spaces, and minimal ornamentation, this office space prioritizes
+        light, form, and materials to foster an environment of innovation and clarity.",
+        "imgFirst":"headquarters-first.jpg",
+        "imgSecond":"headquarters-second.jpg",
+        "imgThird":"headquarters-third.jpg"
+        }
+      </include>
+
+      <include src="./html/portfolio/_case.html">
+        {
+        "class":"section article--light",
+        "image":"minimalist-workspace.jpg",
+        "title":"Minimalist Zen Workspace",
+        "subTitle":"Minimalist Zen Workspace Serenity in Sparseness",
+        "articleImg":"productivity.jpg",
+        "titleSmall":"Peaceful Productivity",
+        "text":"The Minimalist Zen Workspace is designed to embody tranquility and mindfulness. With an emphasis on
+        sparsity and the use of natural light, it creates a serene atmosphere that encourages focus and creativity. The
+        furniture is carefully chosen to support simplicity and functionality, promoting a clutter-free and peaceful
+        work environment.",
+        "imgFirst":"workspace-first.jpg",
+        "imgSecond":"workspace-second.jpg",
+        "imgThird":"workspace-third.jpg"
+        }
+      </include>
+
+      <include src="./html/_contact.html">
+        {
+        "subTitle":"",
+        "title":"Contact Us"
+        }
+      </include>
+    </main>
+
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

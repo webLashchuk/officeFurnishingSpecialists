@@ -1,0 +1,30 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.gallery {
+  column-count: 3;
+  column-gap: 30px;
+  margin-bottom: 30px;
+
+  @include media(tablet) {
+    column-count: 2;
+  }
+
+  @include media(mobile-l) {
+    column-gap: 20px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    @include media(mobile-l) {
+      margin-bottom: 20px;
+    }
+  }
+
+  img {
+    object-fit: contain;
+    transform: scale(1.01);
+  }
+}

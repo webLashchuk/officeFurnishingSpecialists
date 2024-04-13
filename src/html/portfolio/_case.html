@@ -1,0 +1,31 @@
+<section class="case">
+  <div class="case__wrapper section overlay-case" style="background-image: url('./images/portfolio/{{image}}');">
+    <div class="container">
+      <h2>{{title}}</h2>
+      <p>
+        {{subTitle}}
+      </p>
+    </div>
+  </div>
+  <include src="./html/_article.html">
+    {
+    "class":"{{class}}",
+    "image":"{{articleImg}}",
+    "title":"{{titleSmall}}",
+    "text":"{{text}}",
+    "btnClass":"sr-only"
+    }
+  </include>
+  <ul class="section grid grid--portfolio" data-items="3">
+    <li class="grid__item">
+      <img src="./images/portfolio/{{imgFirst}}" width="480" height="360" alt="Brutalist Command Center" loading="lazy">
+    </li>
+    <li class="grid__item">
+      <img src="./images/portfolio/{{imgSecond}}" width="480" height="360" alt="Brutalist Command Center"
+        loading="lazy">
+    </li>
+    <li class="grid__item">
+      <img src="./images/portfolio/{{imgThird}}" width="480" height="360" alt="Brutalist Command Center" loading="lazy">
+    </li>
+  </ul>
+</section>
