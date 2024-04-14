@@ -32,6 +32,8 @@
 
   &--order,
   &--hero {
+    margin: 0;
+
     &:hover {
       color: var(--color-brown-500);
       border-color: var(--color-brown-500);
@@ -113,6 +115,7 @@
     background-color: transparent;
     border-color: var(--color-brown-600);
     color: var(--color-brown-600);
+    margin: 0;
 
     &:hover {
       color: var(--color-white);
@@ -127,7 +130,6 @@
   }
 
   @include media(mobile-s) {
-    margin: 0 auto;
     width: max-content;
     min-width: auto;
   }

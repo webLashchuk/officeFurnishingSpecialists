@@ -42,8 +42,7 @@ body {
   min-height: var(--vh);
 }
 
-.overlay,
-.overlay-case {
+.overlay {
   position: relative;
 
   &::before {
@@ -51,7 +50,7 @@ body {
     position: absolute;
     z-index: 1;
     background: var(--gradient);
-    opacity: 0.85;
+    opacity: 0.9;
     inset: 0;
 
     @include media(tablet) {
@@ -61,25 +60,16 @@ body {
   }
 }
 
-.overlay-case {
-
+.overlay--case {
   &::before {
     background: var(--gradient-case);
     opacity: 1;
   }
 }
 
-.overlay-image {
-  display: block;
-  position: absolute;
-  background-color: rgba(0, 0, 0, .5);
-  opacity: 0.5;
-  inset: 0;
-}
-
 .dark {
-  background-color: var(--color-brown-900);
   color: var(--color-white);
+  background-color: var(--color-brown-900);
 
   p,
   h3,
@@ -115,7 +105,6 @@ body {
   transition: filter .3s;
 
   img {
-    max-width: 196px;
     width: 100%;
   }
 
@@ -153,10 +142,16 @@ body {
   background-size: contain;
 }
 
-.show {
+.hide {
   display: none;
 }
 
 .category {
   position: relative;
+}
+
+.main {
+  &--top {
+    padding-top: var(--header-height);
+  }
 }

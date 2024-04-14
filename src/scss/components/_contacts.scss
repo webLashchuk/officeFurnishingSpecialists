@@ -3,7 +3,7 @@
 
 .contact {
   h2 {
-    margin-bottom: 120px;
+    margin: 0 auto 35px;
   }
 
   &__form {
@@ -27,25 +27,13 @@
   input,
   textarea {
     border-color: transparent;
-    padding: 19px;
+    padding: 18px;
+    color: var(--color-brown-600);
     width: 100%;
     background-color: var(--color-white);
 
     &::placeholder {
       color: var(--color-brown-600);
-      transition: color .2s;
-    }
-
-    &:hover::placeholder {
-      color: var(--color-brown-900);
-    }
-
-    &:focus::placeholder {
-      color: transparent;
-    }
-
-    &:active::placeholder {
-      color: transparent;
     }
   }
 
@@ -58,10 +46,4 @@
     max-width: 100%;
     width: 100%;
   }
-
-  @include media(tablet-wide) {}
-
-  @include media(mobile-l) {}
-
-  @include media(mobile-m) {}
 }

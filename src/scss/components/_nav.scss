@@ -16,6 +16,10 @@
 
     @include media(tablet) {
       display: flex;
+
+      .logo--header {
+        display: none;
+      }
     }
 
     .header & {

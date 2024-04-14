@@ -21,13 +21,22 @@
 
     @include media(tablet) {
       max-width: 1000px;
-      min-height: 501px;
+      min-height: 500px;
       grid-row: 1/2;
     }
   }
 
+  &__image-overlay {
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba($color: #000000, $alpha: 0.4)
+    }
+  }
+
   &__inner {
-    min-height: 503px;
+    min-height: 500px;
     align-self: flex-end;
     background-color: var(--color-brown-600);
     padding: 71px 124px;

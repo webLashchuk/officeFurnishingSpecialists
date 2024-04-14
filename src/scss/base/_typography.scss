@@ -32,24 +32,11 @@ h2,
   color: inherit;
   margin: 0 auto 90px;
 
-  &--review {
-    margin: 0 auto 60px;
-  }
-
-  &--contact {
-    margin: 0 auto 35px;
-  }
-
-  &--gallery {
-    margin: 0 auto 70px;
-  }
-
   &--category {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    z-index: 1;
+    transform: translateX(-50%) translateY(-50%);
   }
 
   &--catalog {
@@ -65,7 +52,6 @@ h2,
     font-size: 28px;
     margin: 0 auto 40px;
   }
-
 }
 
 .sub-title {

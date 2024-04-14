@@ -2,11 +2,11 @@
 @use "../utils/mixins"as*;
 
 .product {
-  max-width: 501px;
+  max-width: 500px;
 
   img {
     width: 100%;
-    min-height: 501px;
+    min-height: 500px;
     object-fit: cover;
     margin-bottom: rem(20);
     overflow: hidden;

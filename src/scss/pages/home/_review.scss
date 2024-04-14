@@ -2,35 +2,7 @@
 @use "../../utils/mixins"as*;
 
 .review {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  max-width: 636px;
-  width: 100%;
-
-  &:not(:last-of-type) {
-    margin-bottom: 50px;
-  }
-
-  img {
-    max-width: 120px;
-    min-height: 120px;
-    filter: grayscale(100%);
-    border-radius: 50%;
-    margin-bottom: 16px;
-  }
-
-  &__author {
-    display: block;
-    font-family: var(--font-family-secondary);
-    font-size: 21px;
-    font-weight: var(--fw-700);
-    margin-bottom: 20px;
-  }
-
-  &__blockquote {
-    line-height: 1.55;
-    font-size: 18px;
+  h2 {
+    margin: 0 auto 60px;
   }
 }
