@@ -37,7 +37,7 @@
     &:not(:last-child) {
       margin-right: 24px;
 
-      @include media(mobile-s) {
+      @include media(mobile-m) {
         margin-right: 0;
       }
     }

@@ -122,7 +122,7 @@
       margin: 0 auto;
     }
 
-    @include media(mobile-s) {
+    @include media(mobile-m) {
       flex-direction: column;
       gap: 30px;
     }
