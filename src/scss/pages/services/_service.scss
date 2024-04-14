@@ -23,8 +23,7 @@
   }
 
   &__item {
-    display: flex;
-    flex-direction: column;
+    @include flex-col;
     height: 100%;
     max-width: 100%;
     position: relative;

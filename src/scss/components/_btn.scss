@@ -4,9 +4,7 @@
 
 *[class].btn {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-all-center;
   border: 1px solid transparent;
   white-space: nowrap;
   border-radius: 0 !important;

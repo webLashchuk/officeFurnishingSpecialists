@@ -4,14 +4,12 @@
 .case {
 
   &__wrapper {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    @include cover-background;
   }
 
   .inner {
     min-height: 100vh;
-    display: flex;
+    @include flex;
     flex-direction: column;
     justify-content: flex-end;
 

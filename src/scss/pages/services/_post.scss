@@ -16,14 +16,12 @@
 
     @include media(tablet) {
       min-height: 600px;
-      background-size: cover;
-      background-position: center;
+      @include cover-background;
     }
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
+    @include flex-col;
     align-content: flex-start;
     max-width: 420px;
     text-align: left;

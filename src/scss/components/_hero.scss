@@ -2,7 +2,6 @@
 @use "../utils/mixins/"as*;
 
 .hero {
-  background-position: center;
   padding-top: 190px;
 
   @include media(tablet-wide) {
@@ -10,19 +9,16 @@
   }
 
   &__inner {
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include cover-background;
     padding-block: 12px 10px;
   }
 
   &__content {
+    @include flex-all-center;
     position: relative;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
     padding-inline: 35px 30px;
-    align-items: center;
     max-width: 570px;
     min-height: 100vh;
     z-index: 1;
@@ -95,11 +91,6 @@
     p {
       color: var(--color-white-600);
     }
-
-    // .btn--request {
-    //   margin-top: 1em;
-    //   margin-bottom: 1em;
-    // }
   }
 
   @include media(tablet) {

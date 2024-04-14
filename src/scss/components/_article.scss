@@ -16,8 +16,7 @@
     width: 100%;
     position: relative;
     grid-row: 1/3;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include cover-background;
 
     @include media(tablet) {
       max-width: 1000px;
@@ -82,9 +81,7 @@
     .article__inner {
       background-color: var(--color-yellow-100);
       padding: 120px 124px 85px;
-      display: flex;
-      align-items: center;
-      align-items: flex-left;
+      @include flex-v-center;
 
       h3 {
         max-width: 100%;
@@ -114,8 +111,7 @@
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
+    @include flex-col;
     max-width: 472px;
 
     @include media(tablet) {

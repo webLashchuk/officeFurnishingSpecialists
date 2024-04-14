@@ -2,9 +2,8 @@
 @use "../utils/mixins/"as*;
 
 .nav {
+  @include flex-v-center;
   position: relative;
-  display: flex;
-  align-items: center;
   justify-content: space-around;
 
   &__inner {
@@ -32,7 +31,7 @@
         justify-content: flex-start;
         overflow-y: auto;
         color: var(--color-brown-600);
-        padding-top: calc(var(--header-height) * 1.2);
+        padding-block: calc(var(--header-height) * 1.2) 20px;
         width: 100%;
         height: calc(var(--vh));
         background-color: var(--color-yellow-100);
@@ -48,8 +47,7 @@
   }
 
   &__list {
-    display: flex;
-    align-items: center;
+    @include flex-v-center;
     order: 1;
 
     @include media(tablet) {
@@ -105,8 +103,7 @@
   }
 
   &__btns {
-    display: flex;
-    align-items: center;
+    @include flex-v-center;
     justify-self: end;
     order: 3;
 

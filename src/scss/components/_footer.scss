@@ -5,13 +5,10 @@
   font-size: 18px;
 
   .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-all-sb;
 
     &__inner {
-      display: flex;
-      flex-direction: column;
+      @include flex-col;
       align-items: flex-start;
 
       @include media(tablet) {
@@ -54,9 +51,7 @@
 
   &__bottom,
   &__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-all-sb;
   }
 
   &__bottom {
